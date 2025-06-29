@@ -748,8 +748,17 @@
         });
         
         function closeModal() {
+    // Play sound
+    const audio = new Audio('vote-completed.mp3'); // Ensure 'vote-completed.mp3' is the correct path to your sound file
+    audio.play().catch(e => console.error("Error playing sound:", e)); // Add error handling for sound playback
+
+    // Hide the modal
     document.getElementById('confirmationModal').classList.remove('active');
-    window.location.href = 'index.html'; // Redirect to index.html
+    
+    // Redirect to index.html after a short delay to allow sound to start
+    setTimeout(() => {
+        window.location.href = 'index.html'; 
+    }, 200); // 200ms delay
 }
         
         // Create celebration elements when vote is submitted
