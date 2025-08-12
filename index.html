@@ -1,412 +1,1000 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S. Vinotha | Full Stack Developer</title>
-  <link href="https://unpkg.com/phosphor-icons" rel="stylesheet">
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-</head>
-<body>
-  <!-- Preloader -->
-  <div class="loader-wrapper">
-    <div class="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-  </div>
-
-  <div class="d-flex gap-6">
-    <!-- Sidebar -->
-    <div class="side-menu">
-      <div class="sidebar-btn close-btn cursor-pointer d-block d-lg-none">
-        <i class="ph ph-x fs-two p1-color"></i>
-      </div>
-
-      <div class="d-flex">
-        <div class="side-menu-left">
-          <div class="d-flex flex-column gap-8 justify-content-center align-items-center mt-6">
-            <a href="index.html" class="side-icon p1-color bgn2-color brn4">
-              <i class="ph ph-code"></i>
-            </a>
-            <div class="d-flex flex-column align-items-center gap-1">
-              <span class="toggle_name fs-eleven n5-color">DarkMode</span>
-              <button class="side-icon bg1-color mood_toggle">
-                <i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="side-menu-right overflow-y-auto">
-          <div class="d-flex flex-column gap-6 justify-content-between py-10 px-5 bgn2-color h-100">
-            <div>
-              <div class="sidebar-profile">
-                <div class="position-relative">
-                  <div class="profile-img1 d-flex justify-content-center overflow-hidden">
-                    <img src="assets/images/profile.png" alt="Vinotha" class="">
-                  </div>
-                  <span class="thumb">👋</span>
-                </div>
-
-                <h4 class="n5-color fw-semibold fs-five mt-2 text-center">
-                  S. Vinotha
-                </h4>
-                <span class="n5-color fs-nine d-block text-center">Full Stack Developer</span>
-                <div class="d-flex justify-content-center gap-2 align-items-center mt-4">
-                  <a href="https://linkedin.com" class="social-icon p1-color">
-                    <i class="ph ph-linkedin-logo"></i>
-                  </a>
-                  <a href="https://github.com" class="social-icon p1-color">
-                    <i class="ph ph-github-logo"></i>
-                  </a>
-                  <a href="mailto:vinothaselvam21@gmail.com" class="social-icon p1-color">
-                    <i class="ph ph-envelope"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="line-divider my-4 my-md-8"></div>
-
-              <div class="menu-list">
-                <ul class="d-flex flex-column gap-3">
-                  <li class="rounded-3 bg1-color">
-                    <a href="index.html" class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2">
-                      <i class="ph ph-user fs-six"></i> About Me
-                    </a>
-                  </li>
-                  <li class="rounded-3">
-                    <a href="portfolio.html" class="d-flex justify-content-between align-items-center">
-                      <div class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
-                        <i class="ph ph-code-block fs-six"></i> Projects
-                      </div>
-                      <span class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3">8+</span>
-                    </a>
-                  </li>
-                  <li class="rounded-3">
-                    <a href="resume.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
-                      <i class="ph ph-file-text fs-six"></i> Resume
-                    </a>
-                  </li>
-                  <li class="rounded-3">
-                    <a href="skills.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
-                      <i class="ph ph-stack fs-six"></i> Skills
-                    </a>
-                  </li>
-                  <li class="rounded-3">
-                    <a href="contact.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
-                      <i class="ph ph-envelope fs-six"></i> Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <a href="contact.html" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto">
-              <i class="ph ph-paper-plane-tilt"></i>Hire Me
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content w-100">
-      <!-- Top Header -->
-      <div class="w-100 bgn1-color p-3 position-fixed z-3 top-0 d-lg-none d-flex align-items-center justify-content-between br-bottom-n5 box-shadow1">
-        <a href="index.html" class="side-icon bgn2-color brn4">
-          <i class="ph ph-code"></i>
-        </a>
-      </div>
-
-      <!-- Banner Section -->
-      <section class="pt-120 pb-60 br-bottom-n3 overflow-hidden mt-10 mt-lg-0">
-        <div class="container">
-          <div class="d-flex flex-wrap gap-10 gap-md-15 align-items-center justify-content-between">
-            <div class="banner-content">
-              <span class="n5-color fs-five">HI, I'M</span>
-              <h1 class="typing-text display-one p1-color mt-2 mb-3">S. Vinotha</h1>
-              <h2 class="fs-three n5-color mb-3">Full Stack Developer</h2>
-              <p class="fs-seven n5-color">
-                A committed and versatile team player recognized for strong problem-solving abilities and exceptional communication skills. 
-                Seeking opportunities to utilize my talents and contribute to the success of dynamic organizations with honesty and dedication.
-              </p>
-              <div class="d-flex flex-wrap align-items-center gap-3 gap-md-6 mt-4 mt-md-8">
-                <a href="portfolio.html" class="primary-btn px-3 px-md-6 py-2 py-md-4 fw-medium rounded-pill d-flex align-items-center gap-2">
-                  <i class="ph ph-arrow-right"></i>Projects
-                </a>
-                <a href="resume.html" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                  <i class="ph ph-file-text"></i>Resume
-                </a>
-              </div>
-            </div>
-            
-            <div class="position-relative profile-img">
-              <div class="user-bg"></div>
-              <div class="bg-white">
-                <img src="assets/images/profile-main.jpg" alt="Vinotha" class="user-img">
-              </div>
-            </div>
-          </div>
-          
-          <!-- Counter -->
-          <div class="banner-counter d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 gap-md-6 mt-10 mt-md-17">
-            <div class="d-flex align-items-center gap-2 gap-xl-4">
-              <h2 class="display-two fw-semibold p1-color">
-                <span class="counter">3</span>+
-              </h2>
-              <div class="line"></div>
-              <span class="n5-color">Years Experience</span>
-            </div>
-            <div class="d-flex align-items-center gap-2 gap-xl-4">
-              <h2 class="display-two fw-semibold p1-color">
-                <span class="counter">15</span>+
-              </h2>
-              <div class="line"></div>
-              <span class="n5-color">Projects Completed</span>
-            </div>
-            <div class="d-flex align-items-center gap-2 gap-xl-4">
-              <h2 class="display-two fw-semibold p1-color">
-                <span class="counter">100</span>+
-              </h2>
-              <div class="line"></div>
-              <span class="n5-color">Students Trained</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section class="pt-120 pb-120">
-        <div class="container">
-          <div class="d-flex gap-3 flex-wrap flex-xxl-nowrap justify-content-between align-items-end pb-60">
-            <div data-aos="zoom-in-left" class="section-heading">
-              <div class="d-flex align-items-center gap-2">
-                <div class="title-line"></div>
-                <h2 class="display-four n5-color fw-semibold">Technical Skills</h2>
-              </div>
-              <p class="fs-seven n4-color mt-2 mt-md-4">
-                Quick learner with a passion for new technologies and strong problem-solving abilities.
-              </p>
-            </div>
-            <a href="skills.html" data-aos="zoom-in-right" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 h-100 text-nowrap">
-              <i class="ph ph-arrow-right"></i>All Skills
-            </a>
-          </div>
-
-          <div class="row g-3 g-md-6">
-            <!-- Frontend Skills -->
-            <div data-aos="fade-up" data-aos-duration="500" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-browser fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Frontend Development</h4>
-                <p class="fs-seven n4-color">
-                  JavaScript (ES6+), ReactJS, HTML5, CSS3, Responsive Design, Frontend state management, RESTful API integration.
-                </p>
-              </div>
-            </div>
-
-            <!-- Backend Skills -->
-            <div data-aos="fade-up" data-aos-duration="600" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-server fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Backend Development</h4>
-                <p class="fs-seven n4-color">
-                  Java, Spring Boot (Spring MVC, Spring Security, Spring Data JPA), Microservices Architecture, REST APIs.
-                </p>
-              </div>
-            </div>
-
-            <!-- Database Skills -->
-            <div data-aos="fade-up" data-aos-duration="700" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-database fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Database</h4>
-                <p class="fs-seven n4-color">
-                  PL/SQL, MySQL (Query Optimization, Stored Procedures, Triggers), Database Design, Indexing.
-                </p>
-              </div>
-            </div>
-
-            <!-- DevOps Skills -->
-            <div data-aos="fade-up" data-aos-duration="800" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-cloud fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">DevOps & Cloud</h4>
-                <p class="fs-seven n4-color">
-                  Docker (Containerization, Docker Compose), Basic cloud infrastructure understanding.
-                </p>
-              </div>
-            </div>
-
-            <!-- Design Tools -->
-            <div data-aos="fade-up" data-aos-duration="500" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-paint-brush fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Design Tools</h4>
-                <p class="fs-seven n4-color">
-                  Figma, Adobe InDesign, Adobe Illustrator for creating intuitive UI/UX designs.
-                </p>
-              </div>
-            </div>
-
-            <!-- Teaching -->
-            <div data-aos="fade-up" data-aos-duration="600" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-graduation-cap fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Teaching</h4>
-                <p class="fs-seven n4-color">
-                  Experience instructing students in Python programming and data science fundamentals.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section class="pt-120 pb-120 br-bottom-n3">
-        <div class="container">
-          <div data-aos="zoom-in-up" class="section-heading mb-8 mb-md-15">
-            <div class="d-flex align-items-center gap-2">
-              <div class="title-line"></div>
-              <h2 class="display-four n5-color fw-semibold">Professional Experience</h2>
-            </div>
-            <p class="fs-seven n4-color mt-2 mt-md-4">
-              My journey through different roles that shaped my technical and professional skills.
-            </p>
-          </div>
-
-          <div class="row g-6 g-md-8">
-            <!-- TwikiBot Experience -->
-            <div data-aos="fade-up" data-aos-duration="700" class="col-xl-6">
-              <div class="project-card">
-                <div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-                  <div>
-                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Jan 2024 - Present
-                      </span>
-                    </div>
-                    <h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">
-                      TwikiBot Technology — Junior Developer
-                    </h3>
-                    <ul class="fs-seven n4-color mt-3 pl-4">
-                      <li class="mb-2">Developed dynamic, responsive websites using PHP and MySQL</li>
-                      <li class="mb-2">Collaborated with design teams to implement features based on user requirements</li>
-                      <li>Engaged with clients to gather requirements and troubleshoot issues efficiently</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Infinity Learn Experience -->
-            <div data-aos="fade-up" data-aos-duration="800" class="col-xl-6">
-              <div class="project-card">
-                <div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-                  <div>
-                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Jan 2023 – July 2023
-                      </span>
-                    </div>
-                    <h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">
-                      Infinity Learn Futurz - Coding Trainer
-                    </h3>
-                    <ul class="fs-seven n4-color mt-3 pl-4">
-                      <li class="mb-2">Instructed students in Python programming and data science fundamentals</li>
-                      <li>Designed curriculum-aligned learning experiences to promote coding and analytical thinking</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Certifications Section -->
-      <section class="pt-120 pb-120">
-        <div class="container">
-          <div data-aos="zoom-in-up" class="section-heading mb-8 mb-md-15">
-            <div class="d-flex align-items-center gap-2">
-              <div class="title-line"></div>
-              <h2 class="display-four n5-color fw-semibold">Certifications</h2>
-            </div>
-            <p class="fs-seven n4-color mt-2 mt-md-4">
-              My continuous learning journey through certifications and courses.
-            </p>
-          </div>
-
-          <div class="row g-6 g-md-8">
-            <!-- Java Certification -->
-            <div data-aos="fade-up" data-aos-duration="700" class="col-md-6 col-lg-4">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-certificate fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Java Full Stack Developer</h4>
-                <p class="fs-seven n4-color">Completed January 2023</p>
-              </div>
-            </div>
-
-            <!-- Advanced Diploma -->
-            <div data-aos="fade-up" data-aos-duration="800" class="col-md-6 col-lg-4">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-certificate fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Advanced Diploma in Java Programming</h4>
-                <p class="fs-seven n4-color">July – November 2022</p>
-              </div>
-            </div>
-
-            <!-- SQL Course -->
-            <div data-aos="fade-up" data-aos-duration="900" class="col-md-6 col-lg-4">
-              <div class="service-card px-4 px-lg-8 py-5 py-lg-10">
-                <i class="ph ph-certificate fs-two p1-color"></i>
-                <h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">SQL Course</h4>
-                <p class="fs-seven n4-color">Completed December 2022</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact CTA -->
-      <section class="next-project pt-120 pb-120">
-        <div class="container d-flex gap-3 gap-md-6 flex-wrap justify-content-between align-items-center">
-          <div data-aos="zoom-in-left" class="next-project-content">
-            <h3 class="display-four n11-color fw-semibold mb-2 mb-md-4">
-              Let's Build Something Together
-            </h3>
-            <p class="fs-seven n11-color">
-              I'm open to new opportunities and collaborations. Feel free to reach out for projects or just to say hello!
-            </p>
-          </div>
-          <a data-aos="zoom-in-right" href="contact.html" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 h-100">
-            <i class="ph ph-arrow-right"></i>Contact Me
-          </a>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <section class="container d-flex flex-wrap gap-3 gap-md-6 justify-content-center justify-content-sm-between align-items-center pb-4 pb-md-8 text-center mb-16 mb-lg-0">
-        <span class="fs-eight fw-medium n5-color order-sm-1">
-          Copyright © 2025 <a href="index.html" class="fs-eight fw-medium n5-color">S. Vinotha</a>. All Rights Reserved.
-        </span>
-        <span class="fs-eight fw-medium n5-color order-sm-2">
-          Contact: <a href="tel:+91733946015" class="fs-eight fw-medium n5-color">+91 733946015</a> | 
-          <a href="mailto:vinothaselvam21@gmail.com" class="fs-eight fw-medium n5-color">vinothaselvam21@gmail.com</a>
-        </span>
-      </section>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/plugins/plugins.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/type-word.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-</html>
+<!DOCTYPE html>																									
+<html lang="en">																									
+																									
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><head>																									
+																									
+																									
+<script src="https://unpkg.com/phosphor-icons"></script>																									
+<link href="bootstrap.min.css" rel="stylesheet">																									
+																									
+																									
+<meta charset="UTF-8" />																									
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />																									
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />																									
+<meta name="keywords" content="portfolio, developer, java, full stack" />																									
+<meta																									
+name="description"																									
+content="S. Vinotha - UI UX Developer Portfolio"																									
+/>																									
+<title>S. Vinotha | Portfolio</title>																									
+<link																									
+rel="shortcut icon"																									
+href="assets/images/logo.png"																									
+type="image/x-icon"																									
+/>																									
+<link rel="stylesheet" href="assets/css/style.css" />																									
+<link rel="stylesheet" href="../unpkg.com/aos%403.0.0-beta.6/dist/aos.css" />																									
+<link																									
+rel="stylesheet"																									
+href="../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css"																									
+/>																									
+<script src="../unpkg.com/%40phosphor-icons/web%402.1.2/src/index.js"></script>																									
+</head>																									
+<body>																									
+<svg																									
+xmlns="http://www.w3.org/2000/svg"																									
+width="11"																									
+height="15"																									
+viewBox="0 0 11 15"																									
+fill="none"																									
+class="d-none"																									
+>																									
+<g clip-path="url(#clip0_3569_434)">																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M5.69145 8.43063L1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L5.69145 10.9887V8.43063Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L1.72801 5.49387Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M4.86328 6.5702L8.82672 9.5065L4.86328 12.4606V15.0004L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M4.86328 6.5702L8.82672 9.5065L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M8.72466 2.00391C9.52091 2.00391 10.1657 2.64912 10.1657 3.44491C10.1657 4.24115 9.52091 4.88591 8.72466 4.88591C7.92841 4.88591 7.2832 4.2407 7.2832 3.44491C7.2832 2.64912 7.92841 2.00391 8.72466 2.00391Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M1.83013 12.9972C1.03388 12.9972 0.388672 12.352 0.388672 11.5562C0.388672 10.7604 1.03388 10.1152 1.82967 10.1152C2.62546 10.1152 3.27067 10.76 3.27067 11.5562C3.27067 12.3525 2.62592 12.9972 1.82967 12.9972H1.83013Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+</g>																									
+<defs>																									
+<clipPath>																									
+<rect width="10.5561" height="15" fill="white" />																									
+</clipPath>																									
+</defs>																									
+</svg>																									
+																									
+<div class="loader-wrapper">																									
+<div class="loader"></div>																									
+<div class="loader-section section-left"></div>																									
+<div class="loader-section section-right"></div>																									
+</div>																									
+<div class="d-flex gap-6">																									
+<div class="side-menu">																									
+<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-none">																									
+<i class="ph ph-x fs-two p1-color"></i>																									
+</div>																									
+																									
+<div class="d-flex">																									
+<div class="side-menu-left">																									
+<div>																									
+<div																									
+class="d-flex flex-column gap-8 justify-content-center align-items-center mt-6"																									
+>																									
+<a href="index.html" class="side-icon p1-color bgn2-color brn4">																									
+<svg																									
+xmlns="http://www.w3.org/2000/svg"																									
+width="11"																									
+height="15"																									
+viewBox="0 0 11 15"																									
+fill="none"																									
+>																									
+<g clip-path="url(#clip0_3569_434)">																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M5.69145 8.43063L1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L5.69145 10.9887V8.43063Z"																									
+fill="currentColor"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L1.72801 5.49387Z"																									
+fill="currentColor"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M4.86328 6.5702L8.82672 9.5065L4.86328 12.4606V15.0004L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"																									
+fill="currentColor"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M4.86328 6.5702L8.82672 9.5065L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"																									
+fill="currentColor"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M8.72466 2.00391C9.52091 2.00391 10.1657 2.64912 10.1657 3.44491C10.1657 4.24115 9.52091 4.88591 8.72466 4.88591C7.92841 4.88591 7.2832 4.2407 7.2832 3.44491C7.2832 2.64912 7.92841 2.00391 8.72466 2.00391Z"																									
+fill="currentColor"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M1.83013 12.9972C1.03388 12.9972 0.388672 12.352 0.388672 11.5562C0.388672 10.7604 1.03388 10.1152 1.82967 10.1152C2.62546 10.1152 3.27067 10.76 3.27067 11.5562C3.27067 12.3525 2.62592 12.9972 1.82967 12.9972H1.83013Z"																									
+fill="currentColor"																									
+/>																									
+</g>																									
+<defs>																									
+<clipPath>																									
+<rect width="10.5561" height="15" fill="white" />																									
+</clipPath>																									
+</defs>																									
+</svg>																									
+</a>																									
+																									
+<div class="d-flex flex-column align-items-center gap-1">																									
+<span class="toggle_name fs-eleven n5-color">DarkMode</span>																									
+<button class="side-icon bg1-color mood_toggle">																									
+<i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>																									
+</button>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+<div class="side-menu-right overflow-y-auto">																									
+<div																									
+class="d-flex flex-column gap-6 justify-content-between py-10 px-5 bgn2-color h-100"																									
+>																									
+<div class="">																									
+<div class="sidebar-profile">																									
+<div class="position-relative">																									
+<div																									
+class="profile-img1 d-flex justify-content-center overflow-hidden"																									
+>																									
+<img																									
+src="assets/images/profile.png"																									
+alt="user"																									
+class=""																									
+/>																									
+</div>																									
+<span class="thumb">👋</span>																									
+</div>																									
+																									
+<h4 class="n5-color fw-semibold fs-five mt-2 text-center">																									
+S. Vinotha																									
+</h4>																									
+<span class="n5-color fs-nine d-block text-center"																									
+>UI UX Developer</span																									
+>																									
+<div																									
+class="d-flex justify-content-center gap-2 align-items-center mt-4"																									
+>																									
+<a href="javascript:void(0)" class="social-icon p1-color">																									
+<i class="ph ph-facebook-logo"></i>																									
+</a>																									
+<a href="javascript:void(0)" class="social-icon p1-color">																									
+<i class="ph ph-instagram-logo"></i>																									
+</a>																									
+<a href="javascript:void(0)" class="social-icon p1-color">																									
+<i class="ph ph-linkedin-logo"></i>																									
+</a>																									
+</div>																									
+</div>																									
+<div class="line-divider my-4 my-md-8"></div>																									
+																									
+<div class="menu-list">																									
+<ul class="d-flex flex-column gap-3">																									
+<li class="rounded-3 bg1-color">																									
+<a																									
+href="index.html"																									
+class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2"																									
+><i class="ph ph-user fs-six"></i> About Me</a																									
+>																									
+</li>																									
+																									
+<li class="rounded-3">																									
+<a																									
+href="portfolio.html"																									
+class="d-flex justify-content-between align-items-center"																									
+>																									
+<div																									
+class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"																									
+>																									
+<i class="ph ph-code-block fs-six"></i> My Projects																									
+</div>																									
+<span																									
+class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3"																									
+>8</span																									
+>																									
+</a>																									
+</li>																									
+<li class="rounded-3">																									
+<a																									
+href="price.html"																									
+class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"																									
+><i class="ph ph-briefcase fs-six"></i>Skills & Expertise</a																									
+>																									
+</li>																									
+<li class="rounded-3">																									
+<a																									
+href="blog.html"																									
+class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"																									
+><i class="ph ph-newspaper-clipping fs-six"></i>Experience</a																									
+>																									
+</li>																									
+<li class="rounded-3">																									
+<a																									
+href="contact.html"																									
+class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"																									
+><i class="ph ph-envelope fs-six"></i>Contact Me</a																									
+>																									
+</li>																									
+</ul>																									
+</div>																									
+</div>																									
+<a																									
+href="contact.html"																									
+class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"																									
+>																									
+<i class="ph ph-paper-plane-tilt"></i>Hire Me																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+<div class="main-content w-100">																									
+<div																									
+class="w-100 bgn1-color p-3 position-fixed z-3 top-0 d-lg-none d-flex align-items-center justify-content-between br-bottom-n5 box-shadow1"																									
+>																									
+<a href="index.html" class="side-icon bgn2-color brn4">																									
+<svg																									
+xmlns="../www.w3.org/2000/svg.html"																									
+width="11"																									
+height="15"																									
+viewBox="0 0 11 15"																									
+fill="none"																									
+>																									
+<g clip-path="url(#clip0_3569_435)">																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M5.69145 8.43063L1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L5.69145 10.9887V8.43063Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L1.72801 5.49387Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M4.86328 6.5702L8.82672 9.5065L4.86328 12.4606V15.0004L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M4.86328 6.5702L8.82672 9.5065L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M8.72466 2.00391C9.52091 2.00391 10.1657 2.64912 10.1657 3.44491C10.1657 4.24115 9.52091 4.88591 8.72466 4.88591C7.92841 4.88591 7.2832 4.2407 7.2832 3.44491C7.2832 2.64912 7.92841 2.00391 8.72466 2.00391Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M1.83013 12.9972C1.03388 12.9972 0.388672 12.352 0.388672 11.5562C0.388672 10.7604 1.03388 10.1152 1.82967 10.1152C2.62546 10.1152 3.27067 10.76 3.27067 11.5562C3.27067 12.3525 2.62592 12.9972 1.82967 12.9972H1.83013Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+</g>																									
+<defs>																									
+<clipPath>																									
+<rect width="10.5561" height="15" fill="white" />																									
+</clipPath>																									
+</defs>																									
+</svg>																									
+</a>																									
+																									
+</div>																									
+																									
+<div																									
+class="w-100 bgn1-color p-3 position-fixed z-3 bottom-0 d-block d-lg-none br-top-n5 box-shadow1"																									
+>																									
+<div class="header-bottom-menu w-full">																									
+<ul class="d-flex gap-1 align-items-center justify-content-between">																									
+<li class="rounded-3 bg1-color">																									
+<a																									
+href="index.html"																									
+class="d-flex align-items-center gap-2 n11-color fs-eight p-2"																									
+>																									
+<span																									
+class="fs-five d-flex align-items-center justify-content-center"																									
+>																									
+<i class="ph-fill ph-user"></i>																									
+</span>																									
+<span class="d-none d-md-block">About Me</span></a																									
+>																									
+</li>																									
+<li>																									
+<a																									
+href="portfolio.html"																									
+class="d-flex justify-content-between align-items-center"																									
+>																									
+<div																									
+class="d-flex align-items-center gap-2 n5-color fs-eight p-2"																									
+>																									
+<span																									
+class="fs-five d-flex align-items-center justify-content-center"																									
+>																									
+<i class="ph-fill ph-code-block"></i>																									
+</span>																									
+<span class="d-none d-md-block">My Projects</span>																									
+</div>																									
+<span																									
+class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3 d-none d-md-block"																									
+>8</span																									
+>																									
+</a>																									
+</li>																									
+<li>																									
+<a																									
+href="price.html"																									
+class="d-flex align-items-center gap-2 n5-color fs-eight p-2"																									
+>																									
+<span																									
+class="fs-five d-flex align-items-center justify-content-center"																									
+>																									
+<i class="ph-fill ph-briefcase"></i>																									
+</span>																									
+<span class="d-none d-md-block">Skills</span>																									
+</a>																									
+</li>																									
+<li>																									
+<a																									
+href="resume.html"																									
+class="d-flex align-items-center gap-2 n5-color fs-eight p-2"																									
+>																									
+<span																									
+class="fs-five d-flex align-items-center justify-content-center"																									
+><i class="ph-fill ph-notebook fs-six"></i																									
+></span>																									
+<span class="d-none d-md-block">Experience</span>																									
+</a>																									
+</li>																									
+<li>																									
+<a																									
+href="contact.html"																									
+class="d-flex align-items-center gap-2 n5-color fs-eight p-2"																									
+>																									
+<span																									
+class="fs-five d-flex align-items-center justify-content-center"																									
+><i class="ph-fill ph-envelope"></i																									
+></span>																									
+<span class="d-none d-md-block">Contact</span>																									
+</a>																									
+</li>																									
+</ul>																									
+</div>																									
+</div>																									
+																									
+<div class="color-switcher">																									
+<button class="switcher-btn">																									
+<i class="ph ph-gear-six"></i>																									
+</button>																									
+<div class="pallates box-shadow2 brn4">																									
+<div class="d-flex gap-2">																									
+<button																									
+class="color-btn bg-color1"																									
+data-color="164, 2, 245"																									
+></button>																									
+<button																									
+class="color-btn bg-color2"																									
+data-color="235, 23, 23"																									
+></button>																									
+<button																									
+class="color-btn bg-color3"																									
+data-color="253, 187, 46"																									
+></button>																									
+</div>																									
+<div class="d-flex gap-2 mt-2">																									
+<button																									
+class="color-btn bg-color4"																									
+data-color=" 82, 113, 255"																									
+></button>																									
+<button																									
+class="color-btn bg-color5"																									
+data-color=" 0, 255, 255"																									
+></button>																									
+<button																									
+class="color-btn bg-color6"																									
+data-color="84, 182, 137"																									
+></button>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+<section																									
+class="pt-120 pb-60 br-bottom-n3 overflow-hidden mt-10 mt-lg-0"																									
+>																									
+<div class="container">																									
+<div																									
+class="d-flex flex-wrap gap-10 gap-md-15 align-items-center justify-content-between"																									
+>																									
+																									
+																									
+<div class="banner-content">																									
+<span class="n5-color fs-five">HI, I'M S. VINOTHA</span>																									
+<h2 class="typing-text display-one p1-color mt-2 mb-3">Java Full Stack Developer</h2>																									
+<p class="fs-seven n5-color">																									
+A committed and versatile team player recognized for strong problem-solving abilities and exceptional communication skills. Seeking opportunities to utilize my talents and contribute to the success of dynamic organizations.																									
+Explore my																									
+<a href="portfolio.html" class="p1-color">projects</a>,																									
+<a href="blog.html" class="p1-color">experience</a>,																									
+and <a href="resume.html" class="p1-color">credentials</a>.																									
+</p>																									
+<div class="d-flex flex-wrap align-items-center gap-3 gap-md-6 mt-4 mt-md-8">																									
+<a																									
+href="portfolio.html"																									
+class="primary-btn px-3 px-md-6 py-2 py-md-4 fw-medium rounded-pill d-flex align-items-center gap-2"																									
+>																									
+<i class="ph ph-arrow-right"></i>View Projects																									
+</a>																									
+<a																									
+href="contact.html"																									
+class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"																									
+>																									
+<img src="assets/images/resume-icon.png" alt="icon" />Contact Me																									
+</a>																									
+</div>																									
+</div>																									
+																									
+<div class="position-relative profile-img">																									
+<div class="user-bg"></div>																									
+<div class="bg-white">																									
+<img																									
+src="assets/images/user.jpg"																									
+alt="user"																									
+class="user-img"																									
+/>																									
+</div>																									
+</div>																									
+</div>																									
+<div																									
+class="banner-counter d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 gap-md-6 mt-10 mt-md-17"																									
+>																									
+<div class="d-flex align-items-center gap-2 gap-xl-4">																									
+<h2 class="display-two fw-semibold p1-color">																									
+<span class="counter">2</span>+																									
+</h2>																									
+<div class="line"></div>																									
+<span class="n5-color">Years Experience</span>																									
+</div>																									
+<div class="d-flex align-items-center gap-2 gap-xl-4">																									
+<h2 class="display-two fw-semibold p1-color">																									
+<span class="counter">15</span>+																									
+</h2>																									
+<div class="line"></div>																									
+<span class="n5-color">Projects Completed</span>																									
+</div>																									
+<div class="d-flex align-items-center gap-2 gap-xl-4">																									
+<h2 class="display-two fw-semibold p1-color d-flex gap-1">																									
+<span class="counter">100</span>%																									
+</h2>																									
+<div class="line"></div>																									
+<span class="n5-color">Client Satisfaction</span>																									
+</div>																									
+</div>																									
+																									
+																									
+</div>																									
+</section>																									
+<section class="pt-120 pb-120">																									
+<div class="container">																									
+																									
+<div																									
+class="d-flex gap-3 flex-wrap flex-xxl-nowrap justify-content-between align-items-end pb-60"																									
+>																									
+<div data-aos="zoom-in-left" class="section-heading">																									
+<div class="d-flex align-items-center gap-2">																									
+<div class="title-line"></div>																									
+<h2 class="display-four n5-color fw-semibold">Technical Skills</h2>																									
+</div>																									
+<p class="fs-seven n4-color mt-2 mt-md-4">																									
+Quick learner with a passion for new technologies. Strong leadership and team collaboration skills with analytical thinking and effective problem-solving abilities.																									
+</p>																									
+</div>																									
+<a																									
+href="price.html"																									
+data-aos="zoom-in-right"																									
+class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 h-100 text-nowrap"																									
+>																									
+<i class="ph ph-arrow-right"></i>View All Skills																									
+</a>																									
+</div>																									
+																									
+<div class="row g-3 g-md-6">																									
+<div data-aos="fade-up" data-aos-duration="500" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">																									
+<div class="service-card px-4 px-lg-8 py-5 py-lg-10">																									
+<img src="assets/images/java.png" alt="java" class="service-icon" />																									
+<h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Java</h4>																									
+<p class="fs-seven n4-color">																									
+Proficient in Java programming with experience in developing robust applications using Spring Boot framework.																									
+</p>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="600" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">																									
+<div class="service-card px-4 px-lg-8 py-5 py-lg-10">																									
+<img src="assets/images/spring.png" alt="spring" class="service-icon" />																									
+<h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Spring Boot</h4>																									
+<p class="fs-seven n4-color">																									
+Experience with Spring MVC, Spring Security, and Spring Data JPA for building enterprise-grade applications.																									
+</p>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="700" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">																									
+<div class="service-card px-4 px-lg-8 py-5 py-lg-10">																									
+<img src="assets/images/sql.png" alt="sql" class="service-icon" />																									
+<h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">SQL</h4>																									
+<p class="fs-seven n4-color">																									
+Certified in SQL with skills in database design, query optimization, stored procedures, and triggers.																									
+</p>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="800" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">																									
+<div class="service-card px-4 px-lg-8 py-5 py-lg-10">																									
+<img src="assets/images/react.png" alt="react" class="service-icon" />																									
+<h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">ReactJS</h4>																									
+<p class="fs-seven n4-color">																									
+Skilled in building responsive user interfaces with React, state management, and REST API integration.																									
+</p>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="500" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">																									
+<div class="service-card px-4 px-lg-8 py-5 py-lg-10">																									
+<div class="d-flex gap-3">																									
+<img src="assets/images/html.png" alt="html" class="service-icon" />																									
+<img src="assets/images/css.png" alt="css" class="service-icon" />																									
+</div>																									
+<h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">HTML & CSS</h4>																									
+<p class="fs-seven n4-color">																									
+Expert in creating responsive, accessible layouts using semantic HTML and modern CSS including Flexbox and Grid.																									
+</p>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="600" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">																									
+<div class="service-card px-4 px-lg-8 py-5 py-lg-10">																									
+<img src="assets/images/js.png" alt="js" class="service-icon" />																									
+<h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">JavaScript</h4>																									
+<p class="fs-seven n4-color">																									
+Strong foundation in JavaScript (ES6+), including DOM manipulation, event handling, and asynchronous programming.																									
+</p>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="700" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">																									
+<div class="service-card px-4 px-lg-8 py-5 py-lg-10">																									
+<img src="assets/images/docker.png" alt="docker" class="service-icon" />																									
+<h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">Docker</h4>																									
+<p class="fs-seven n4-color">																									
+Knowledge of containerization with Docker and Docker Compose for application deployment.																									
+</p>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="800" class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">																									
+<div class="service-card px-4 px-lg-8 py-5 py-lg-10">																									
+<img src="assets/images/figma.png" alt="figma" class="service-icon" />																									
+<h4 class="fs-six n5-color fw-medium mt-3 mt-md-6 mb-2 mb-md-3">UI/UX Design</h4>																									
+<p class="fs-seven n4-color">																									
+Experience with Figma, Adobe Illustrator for creating user interfaces and design prototypes.																									
+</p>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+</div>																									
+</section>																									
+<section class="next-project pt-120 pb-120">																									
+<div class="container d-flex gap-3 gap-md-6 flex-wrap justify-content-between align-items-center">																									
+<div data-aos="zoom-in-left" class="next-project-content">																									
+<h3 class="display-four n11-color fw-semibold mb-2 mb-md-4">																									
+Let's Build Something Great Together																									
+</h3>																									
+<p class="fs-seven n11-color">																									
+I'm open to new opportunities and collaborations. Whether you have a project in mind or want to discuss potential work, I'd love to hear from you.																									
+</p>																									
+</div>																									
+<a																									
+data-aos="zoom-in-right"																									
+href="contact.html"																									
+class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 h-100"																									
+>																									
+<i class="ph ph-arrow-right"></i>Get In Touch																									
+</a>																									
+</div>																									
+</section>																									
+																									
+<section class="projects-section pt-120 pb-120 br-bottom-n3">																									
+<div class="container">																									
+<div																									
+class="d-flex gap-3 flex-wrap flex-xxl-nowrap justify-content-between align-items-end mb-8 mb-md-15"																									
+>																									
+<div data-aos="zoom-in-left" class="section-heading">																									
+<div class="d-flex align-items-center gap-2">																									
+<div class="title-line"></div>																									
+<h2 class="display-four n5-color fw-semibold">																									
+Featured Projects																									
+</h2>																									
+</div>																									
+<p class="fs-seven n4-color mt-2 mt-md-4">																									
+A selection of my recent work showcasing my skills in full stack development, UI/UX design, and problem-solving.																									
+</p>																									
+</div>																									
+<a																									
+data-aos="zoom-in-right"																									
+href="portfolio.html"																									
+class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 h-100 text-nowrap"																									
+>																									
+<i class="ph ph-arrow-right"></i>View All Projects																									
+</a>																									
+</div>																									
+																									
+<div class="row g-6 g-md-8">																									
+<div data-aos="fade-up" data-aos-duration="800" class="col-xl-6">																									
+<div class="project-card">																									
+<a href="portfolio_details.html" class="thumb d-block">																									
+<div class="post-thumb">																									
+<div class="post-thumb-inner">																									
+<img																									
+src="assets/images/project1.png"																									
+alt="Project 1"																									
+class="w-100 p-2"																									
+/>																									
+</div>																									
+</div>																									
+</a>																									
+<div class="p-3 p-md-6">																									
+<div																									
+class="d-flex flex-wrap align-items-center justify-content-between gap-3"																									
+>																									
+<a href="portfolio_details.html">																									
+<h4 class="fs-four n5-color">Real Estate Website</h4>																									
+</a>																									
+<a																									
+href="portfolio_details.html"																									
+class="arrow-btn p1-color d-flex justify-content-center align-items-center"																									
+>																									
+<i class="ph ph-arrow-up-right fs-three"></i>																									
+</a>																									
+</div>																									
+<ul class="d-flex flex-wrap gap-2 pt-2">																									
+<li class="pills-btn n5-color">React JS</li>																									
+<li class="pills-btn n5-color">Spring Boot</li>																									
+<li class="pills-btn n5-color">REST API</li>																									
+</ul>																									
+</div>																									
+</div>																									
+</div>																									
+<div data-aos="fade-up" data-aos-duration="900" class="col-xl-6">																									
+<div class="project-card">																									
+<a href="portfolio_details.html" class="thumb d-block">																									
+<div class="post-thumb">																									
+<div class="post-thumb-inner">																									
+<img																									
+src="assets/images/project2.png"																									
+alt="Project 2"																									
+class="w-100 p-2"																									
+/>																									
+</div>																									
+</div>																									
+</a>																									
+<div class="p-3 p-md-6">																									
+<div																									
+class="d-flex flex-wrap align-items-center justify-content-between gap-3"																									
+>																									
+<a href="portfolio_details.html">																									
+<h4 class="fs-four n5-color">E-Commerce Web Portal</h4>																									
+</a>																									
+<a																									
+href="portfolio_details.html"																									
+class="arrow-btn p1-color d-flex justify-content-center align-items-center"																									
+>																									
+<i class="ph ph-arrow-up-right fs-three"></i>																									
+</a>																									
+</div>																									
+<ul class="d-flex flex-wrap gap-2 pt-2">																									
+<li class="pills-btn n5-color">React JS</li>																									
+<li class="pills-btn n5-color">MongoDB</li>																									
+<li class="pills-btn n5-color">Node JS</li>																									
+</ul>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</section>																									
+<footer class="pt-120 pb-40">																									
+<div class="container">																									
+<div																									
+class="d-flex flex-wrap gap-5 justify-content-between align-items-center"																									
+>																									
+<div class="d-flex align-items-center gap-2">																									
+<a href="index.html" class="logo d-flex">																									
+<svg																									
+xmlns="http://www.w3.org/2000/svg"																									
+width="11"																									
+height="15"																									
+viewBox="0 0 11 15"																									
+fill="none"																									
+>																									
+<g clip-path="url(#clip0_3569_434)">																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M5.69145 8.43063L1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L5.69145 10.9887V8.43063Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L1.72801 5.49387Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M4.86328 6.5702L8.82672 9.5065L4.86328 12.4606V15.0004L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M4.86328 6.5702L8.82672 9.5065L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M8.72466 2.00391C9.52091 2.00391 10.1657 2.64912 10.1657 3.44491C10.1657 4.24115 9.52091 4.88591 8.72466 4.88591C7.92841 4.88591 7.2832 4.2407 7.2832 3.44491C7.2832 2.64912 7.92841 2.00391 8.72466 2.00391Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+<path																									
+fill-rule="evenodd"																									
+clip-rule="evenodd"																									
+d="M1.83013 12.9972C1.03388 12.9972 0.388672 12.352 0.388672 11.5562C0.388672 10.7604 1.03388 10.1152 1.82967 10.1152C2.62546 10.1152 3.27067 10.76 3.27067 11.5562C3.27067 12.3525 2.62592 12.9972 1.82967 12.9972H1.83013Z"																									
+fill="rgba(var(--p1))"																									
+/>																									
+</g>																									
+<defs>																									
+<clipPath>																									
+<rect width="10.5561" height="15" fill="white" />																									
+</clipPath>																									
+</defs>																									
+</svg>																									
+</a>																									
+<span class="fs-seven n5-color">S. Vinotha</span>																									
+</div>																									
+<ul class="d-flex flex-wrap gap-2 gap-md-6 align-items-center">																									
+<li><a href="index.html" class="fs-seven n5-color">Home</a></li>																									
+<li>																									
+<a href="portfolio.html" class="fs-seven n5-color"																									
+>Projects</a																									
+>																									
+</li>																									
+<li>																									
+<a href="price.html" class="fs-seven n5-color">Skills</a>																									
+</li>																									
+<li>																									
+<a href="blog.html" class="fs-seven n5-color">Experience</a>																									
+</li>																									
+<li>																									
+<a href="contact.html" class="fs-seven n5-color">Contact</a>																									
+</li>																									
+</ul>																									
+</div>																									
+<div																									
+class="line-divider my-6 my-md-8"																									
+></div>																									
+<div																									
+class="d-flex flex-wrap gap-3 justify-content-between align-items-center"																									
+>																									
+<p class="n5-color fs-seven">																									
+&copy; 2025 All Rights Reserved By S. Vinotha																									
+</p>																									
+<div class="d-flex gap-2">																									
+<a href="javascript:void(0)" class="social-icon p1-color">																									
+<i class="ph ph-facebook-logo"></i>																									
+</a>																									
+<a href="javascript:void(0)" class="social-icon p1-color">																									
+<i class="ph ph-instagram-logo"></i>																									
+</a>																									
+<a href="javascript:void(0)" class="social-icon p1-color">																									
+<i class="ph ph-linkedin-logo"></i>																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</footer>																									
+</div>																									
+</div>																									
+																									
+<script src="assets/js/jquary-3.7.0.min.js"></script>																									
+<script src="../unpkg.com/aos%403.0.0-beta.6/dist/aos.js"></script>																									
+<script src="../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>																									
+<script src="assets/js/mixitup.min.js"></script>																									
+<script src="assets/js/main.js"></script>																									
+<script src="assets/js/bootstrap.bundle.min.js"></script>																									
+</body>																									
+																									
+</html>																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
