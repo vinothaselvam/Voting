@@ -1,388 +1,1000 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S. Vinotha | Projects</title>
-  <link href="https://unpkg.com/phosphor-icons" rel="stylesheet">
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-</head>
-<body>
-  <!-- Preloader -->
-  <div class="loader-wrapper">
-    <div class="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-  </div>
-
-  <div class="d-flex gap-6">
-    <!-- Sidebar -->
-    <div class="side-menu">
-      <div class="sidebar-btn close-btn cursor-pointer d-block d-lg-none">
-        <i class="ph ph-x fs-two p1-color"></i>
-      </div>
-
-      <div class="d-flex">
-        <div class="side-menu-left">
-          <div class="d-flex flex-column gap-8 justify-content-center align-items-center mt-6">
-            <a href="index.html" class="side-icon p1-color bgn2-color brn4">
-              <i class="ph ph-code"></i>
-            </a>
-            <div class="d-flex flex-column align-items-center gap-1">
-              <span class="toggle_name fs-eleven n5-color">DarkMode</span>
-              <button class="side-icon bg1-color mood_toggle">
-                <i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="side-menu-right overflow-y-auto">
-          <div class="d-flex flex-column gap-6 justify-content-between py-10 px-5 bgn2-color h-100">
-            <div>
-              <div class="sidebar-profile">
-                <div class="position-relative">
-                  <div class="profile-img1 d-flex justify-content-center overflow-hidden">
-                    <img src="assets/images/profile.png" alt="Vinotha" class="">
-                  </div>
-                  <span class="thumb">👋</span>
-                </div>
-
-                <h4 class="n5-color fw-semibold fs-five mt-2 text-center">
-                  S. Vinotha
-                </h4>
-                <span class="n5-color fs-nine d-block text-center">Full Stack Developer</span>
-                <div class="d-flex justify-content-center gap-2 align-items-center mt-4">
-                  <a href="https://linkedin.com" class="social-icon p1-color">
-                    <i class="ph ph-linkedin-logo"></i>
-                  </a>
-                  <a href="https://github.com" class="social-icon p1-color">
-                    <i class="ph ph-github-logo"></i>
-                  </a>
-                  <a href="mailto:vinothaselvam21@gmail.com" class="social-icon p1-color">
-                    <i class="ph ph-envelope"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="line-divider my-4 my-md-8"></div>
-
-              <div class="menu-list">
-                <ul class="d-flex flex-column gap-3">
-                  <li class="rounded-3">
-                    <a href="index.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
-                      <i class="ph ph-user fs-six"></i> About Me
-                    </a>
-                  </li>
-                  <li class="rounded-3 bg1-color">
-                    <a href="portfolio.html" class="d-flex justify-content-between align-items-center">
-                      <div class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2">
-                        <i class="ph ph-code-block fs-six"></i> Projects
-                      </div>
-                      <span class="n11-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3">8+</span>
-                    </a>
-                  </li>
-                  <li class="rounded-3">
-                    <a href="resume.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
-                      <i class="ph ph-file-text fs-six"></i> Resume
-                    </a>
-                  </li>
-                  <li class="rounded-3">
-                    <a href="skills.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
-                      <i class="ph ph-stack fs-six"></i> Skills
-                    </a>
-                  </li>
-                  <li class="rounded-3">
-                    <a href="contact.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
-                      <i class="ph ph-envelope fs-six"></i> Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <a href="contact.html" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto">
-              <i class="ph ph-paper-plane-tilt"></i>Hire Me
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content w-100">
-      <!-- Top Header -->
-      <div class="w-100 bgn1-color p-3 position-fixed z-3 top-0 d-lg-none d-flex align-items-center justify-content-between br-bottom-n5 box-shadow1">
-        <a href="index.html" class="side-icon bgn2-color brn4">
-          <i class="ph ph-code"></i>
-        </a>
-      </div>
-
-      <!-- Projects Section -->
-      <section class="pt-120 pb-60 br-bottom-n3 overflow-hidden mt-10 mt-lg-0">
-        <div class="container">
-          <div data-aos="zoom-in-up" class="section-heading mb-8 mb-md-15">
-            <div class="d-flex align-items-center gap-2">
-              <div class="title-line"></div>
-              <h2 class="display-four n5-color fw-semibold">My Projects</h2>
-            </div>
-            <p class="fs-seven n4-color mt-2 mt-md-4">
-              A collection of my work showcasing full-stack development skills and problem-solving abilities.
-            </p>
-          </div>
-
-          <div class="row g-6 g-md-8">
-            <!-- Project 1 -->
-            <div data-aos="fade-up" data-aos-duration="500" class="col-md-6 col-lg-4">
-              <div class="project-card">
-                <div class="project-img overflow-hidden">
-                  <img src="assets/images/project1.jpg" alt="E-commerce Platform" class="w-100">
-                </div>
-                <div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-                  <div>
-                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Full Stack
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        React
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Spring Boot
-                      </span>
-                    </div>
-                    <h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">
-                      E-commerce Platform
-                    </h3>
-                    <p class="fs-seven n4-color mt-3">
-                      Developed a full-featured e-commerce platform with product listings, cart functionality, and secure checkout.
-                    </p>
-                    <div class="d-flex gap-3 mt-4 mt-md-6">
-                      <a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-eye"></i>Live Demo
-                      </a>
-                      <a href="#" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-github-logo"></i>Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div data-aos="fade-up" data-aos-duration="600" class="col-md-6 col-lg-4">
-              <div class="project-card">
-                <div class="project-img overflow-hidden">
-                  <img src="assets/images/project2.jpg" alt="Task Management App" class="w-100">
-                </div>
-                <div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-                  <div>
-                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        React
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Node.js
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        MongoDB
-                      </span>
-                    </div>
-                    <h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">
-                      Task Management App
-                    </h3>
-                    <p class="fs-seven n4-color mt-3">
-                      Created a collaborative task management application with real-time updates and team functionality.
-                    </p>
-                    <div class="d-flex gap-3 mt-4 mt-md-6">
-                      <a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-eye"></i>Live Demo
-                      </a>
-                      <a href="#" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-github-logo"></i>Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div data-aos="fade-up" data-aos-duration="700" class="col-md-6 col-lg-4">
-              <div class="project-card">
-                <div class="project-img overflow-hidden">
-                  <img src="assets/images/project3.jpg" alt="API Gateway" class="w-100">
-                </div>
-                <div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-                  <div>
-                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Java
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Spring Cloud
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Microservices
-                      </span>
-                    </div>
-                    <h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">
-                      API Gateway Service
-                    </h3>
-                    <p class="fs-seven n4-color mt-3">
-                      Designed and implemented an API gateway for microservices architecture with authentication and rate limiting.
-                    </p>
-                    <div class="d-flex gap-3 mt-4 mt-md-6">
-                      <a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-eye"></i>Live Demo
-                      </a>
-                      <a href="#" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-github-logo"></i>Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div data-aos="fade-up" data-aos-duration="800" class="col-md-6 col-lg-4">
-              <div class="project-card">
-                <div class="project-img overflow-hidden">
-                  <img src="assets/images/project4.jpg" alt="Portfolio Website" class="w-100">
-                </div>
-                <div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-                  <div>
-                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        HTML/CSS
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        JavaScript
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Responsive
-                      </span>
-                    </div>
-                    <h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">
-                      Portfolio Website
-                    </h3>
-                    <p class="fs-seven n4-color mt-3">
-                      Designed and developed a responsive portfolio website with interactive elements and smooth animations.
-                    </p>
-                    <div class="d-flex gap-3 mt-4 mt-md-6">
-                      <a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-eye"></i>Live Demo
-                      </a>
-                      <a href="#" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-github-logo"></i>Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div data-aos="fade-up" data-aos-duration="900" class="col-md-6 col-lg-4">
-              <div class="project-card">
-                <div class="project-img overflow-hidden">
-                  <img src="assets/images/project5.jpg" alt="Inventory System" class="w-100">
-                </div>
-                <div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-                  <div>
-                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Java
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Spring Boot
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        MySQL
-                      </span>
-                    </div>
-                    <h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">
-                      Inventory Management
-                    </h3>
-                    <p class="fs-seven n4-color mt-3">
-                      Built an inventory management system with barcode scanning, stock alerts, and reporting features.
-                    </p>
-                    <div class="d-flex gap-3 mt-4 mt-md-6">
-                      <a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-eye"></i>Live Demo
-                      </a>
-                      <a href="#" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-github-logo"></i>Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div data-aos="fade-up" data-aos-duration="1000" class="col-md-6 col-lg-4">
-              <div class="project-card">
-                <div class="project-img overflow-hidden">
-                  <img src="assets/images/project6.jpg" alt="Weather App" class="w-100">
-                </div>
-                <div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-                  <div>
-                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        React
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        API Integration
-                      </span>
-                      <span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">
-                        Geolocation
-                      </span>
-                    </div>
-                    <h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">
-                      Weather Forecast App
-                    </h3>
-                    <p class="fs-seven n4-color mt-3">
-                      Created a weather application that provides real-time forecasts using geolocation and weather API.
-                    </p>
-                    <div class="d-flex gap-3 mt-4 mt-md-6">
-                      <a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-eye"></i>Live Demo
-                      </a>
-                      <a href="#" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">
-                        <i class="ph ph-github-logo"></i>Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <section class="container d-flex flex-wrap gap-3 gap-md-6 justify-content-center justify-content-sm-between align-items-center pb-4 pb-md-8 text-center mb-16 mb-lg-0">
-        <span class="fs-eight fw-medium n5-color order-sm-1">
-          Copyright © 2025 <a href="index.html" class="fs-eight fw-medium n5-color">S. Vinotha</a>. All Rights Reserved.
-        </span>
-        <span class="fs-eight fw-medium n5-color order-sm-2">
-          Contact: <a href="tel:+91733946015" class="fs-eight fw-medium n5-color">+91 733946015</a> | 
-          <a href="mailto:vinothaselvam21@gmail.com" class="fs-eight fw-medium n5-color">vinothaselvam21@gmail.com</a>
-        </span>
-      </section>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/plugins/plugins.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-</html>
+<!DOCTYPE html>																									
+<html lang="en">																									
+<head>																									
+<meta charset="UTF-8">																									
+<meta name="viewport" content="width=device-width, initial-scale=1.0">																									
+<title>S. Vinotha | Projects</title>																									
+<link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">																									
+<link href="bootstrap.min.css" rel="stylesheet">																									
+<link rel="stylesheet" href="assets/css/style.css">																									
+<link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">																									
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">																									
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.2/src/index.js"></script>																									
+</head>																									
+<body>																									
+																									
+<div class="loader-wrapper">																									
+<div class="loader"></div>																									
+<div class="loader-section section-left"></div>																									
+<div class="loader-section section-right"></div>																									
+</div>																									
+																									
+<div class="d-flex gap-6">																									
+<div class="side-menu">																									
+<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-none">																									
+<i class="ph ph-x fs-two p1-color"></i>																									
+</div>																									
+<div class="d-flex">																									
+<div class="side-menu-left">																									
+<div class="d-flex flex-column gap-8 justify-content-center align-items-center mt-6">																									
+<a href="index.html" class="side-icon p1-color bgn2-color brn4">																									
+<i class="ph ph-code"></i>																									
+</a>																									
+<div class="d-flex flex-column align-items-center gap-1">																									
+<span class="toggle_name fs-eleven n5-color">DarkMode</span>																									
+<button class="side-icon bg1-color mood_toggle">																									
+<i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>																									
+</button>																									
+</div>																									
+</div>																									
+</div>																									
+<div class="side-menu-right overflow-y-auto">																									
+<div class="d-flex flex-column gap-6 justify-content-between py-10 px-5 bgn2-color h-100">																									
+<div>																									
+<div class="sidebar-profile">																									
+<div class="position-relative">																									
+<div class="profile-img1 d-flex justify-content-center overflow-hidden">																									
+<img src="assets/images/profile.png" alt="Vinotha" class="">																									
+</div>																									
+<span class="thumb">👋</span>																									
+</div>																									
+<h4 class="n5-color fw-semibold fs-five mt-2 text-center">																									
+S. Vinotha																									
+</h4>																									
+<span class="n5-color fs-nine d-block text-center">Full Stack Developer</span>																									
+<div class="d-flex justify-content-center gap-2 align-items-center mt-4">																									
+<a href="https://linkedin.com/in/vinotha-s-937299230" class="social-icon p1-color">																									
+<i class="ph ph-linkedin-logo"></i>																									
+</a>																									
+<a href="https://github.com/vinothaselvam21" class="social-icon p1-color">																									
+<i class="ph ph-github-logo"></i>																									
+</a>																									
+<a href="mailto:vinothaselvam21@gmail.com" class="social-icon p1-color">																									
+<i class="ph ph-envelope"></i>																									
+</a>																									
+</div>																									
+</div>																									
+<div class="line-divider my-4 my-md-8"></div>																									
+<div class="menu-list">																									
+<ul class="d-flex flex-column gap-3">																									
+<li class="rounded-3">																									
+<a href="index.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">																									
+<i class="ph ph-user fs-six"></i> About Me																									
+</a>																									
+</li>																									
+<li class="rounded-3 bg1-color">																									
+<a href="portfolio.html" class="d-flex justify-content-between align-items-center">																									
+<div class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2">																									
+<i class="ph ph-code-block fs-six"></i> Projects																									
+</div>																									
+<span class="n11-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3">6+</span>																									
+</a>																									
+</li>																									
+<li class="rounded-3">																									
+<a href="resume.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">																									
+<i class="ph ph-file-text fs-six"></i> Resume																									
+</a>																									
+</li>																									
+<li class="rounded-3">																									
+<a href="skills.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">																									
+<i class="ph ph-stack fs-six"></i> Skills																									
+</a>																									
+</li>																									
+<li class="rounded-3">																									
+<a href="contact.html" class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">																									
+<i class="ph ph-envelope fs-six"></i> Contact																									
+</a>																									
+</li>																									
+</ul>																									
+</div>																									
+</div>																									
+<a href="contact.html" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto">																									
+<i class="ph ph-paper-plane-tilt"></i>Hire Me																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+<div class="main-content w-100">																									
+<div class="w-100 bgn1-color p-3 position-fixed z-3 top-0 d-lg-none d-flex align-items-center justify-content-between br-bottom-n5 box-shadow1">																									
+<a href="index.html" class="side-icon bgn2-color brn4">																									
+<i class="ph ph-code"></i>																									
+</a>																									
+</div>																									
+																									
+<div class="color-switcher">																									
+<button class="switcher-btn">																									
+<i class="ph ph-gear-six"></i>																									
+</button>																									
+<div class="pallates box-shadow2 brn4">																									
+<div class="d-flex gap-2">																									
+<button class="color-btn bg-color1" data-color="164, 2, 245"></button>																									
+<button class="color-btn bg-color2" data-color="235, 23, 23"></button>																									
+<button class="color-btn bg-color3" data-color="253, 187, 46"></button>																									
+</div>																									
+<div class="d-flex gap-2 mt-2">																									
+<button class="color-btn bg-color4" data-color="82, 113, 255"></button>																									
+<button class="color-btn bg-color5" data-color="0, 255, 255"></button>																									
+<button class="color-btn bg-color6" data-color="84, 182, 137"></button>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+<section class="pt-120 pb-60 br-bottom-n3 overflow-hidden mt-10 mt-lg-0">																									
+<div class="container">																									
+<div data-aos="zoom-in-up" class="section-heading mb-8 mb-md-15">																									
+<div class="d-flex align-items-center gap-2">																									
+<div class="title-line"></div>																									
+<h2 class="display-four n5-color fw-semibold">My Projects</h2>																									
+</div>																									
+<p class="fs-seven n4-color mt-2 mt-md-4">																									
+A collection of my work showcasing full-stack development skills and problem-solving abilities.																									
+</p>																									
+</div>																									
+																									
+<div class="row g-6 g-md-8">																									
+<div data-aos="fade-up" data-aos-duration="500" class="col-md-6 col-lg-4">																									
+<div class="project-card">																									
+<div class="project-img overflow-hidden">																									
+<img src="assets/images/project1.png" alt="E-commerce Platform" class="w-100">																									
+</div>																									
+<div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">																									
+<div>																									
+<div class="d-flex flex-wrap gap-2 align-items-center">																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Full Stack																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+React																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Spring Boot																									
+</span>																									
+</div>																									
+<h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">																									
+E-commerce Platform																									
+</h3>																									
+<p class="fs-seven n4-color mt-3">																									
+Developed a full-featured e-commerce platform with product listings, cart functionality, and secure checkout.																									
+</p>																									
+<div class="d-flex gap-3 mt-4 mt-md-6">																									
+<a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-eye"></i>Live Demo																									
+</a>																									
+<a href="https://github.com/your-username/project1" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-github-logo"></i>Code																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="600" class="col-md-6 col-lg-4">																									
+<div class="project-card">																									
+<div class="project-img overflow-hidden">																									
+<img src="assets/images/project2.png" alt="Task Management App" class="w-100">																									
+</div>																									
+<div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">																									
+<div>																									
+<div class="d-flex flex-wrap gap-2 align-items-center">																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+React																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Node.js																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+MongoDB																									
+</span>																									
+</div>																									
+<h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">																									
+Task Management App																									
+</h3>																									
+<p class="fs-seven n4-color mt-3">																									
+Created a collaborative task management application with real-time updates and team functionality.																									
+</p>																									
+<div class="d-flex gap-3 mt-4 mt-md-6">																									
+<a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-eye"></i>Live Demo																									
+</a>																									
+<a href="https://github.com/your-username/project2" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-github-logo"></i>Code																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="700" class="col-md-6 col-lg-4">																									
+<div class="project-card">																									
+<div class="project-img overflow-hidden">																									
+<img src="assets/images/project3.png" alt="API Gateway" class="w-100">																									
+</div>																									
+<div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">																									
+<div>																									
+<div class="d-flex flex-wrap gap-2 align-items-center">																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Java																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Spring Cloud																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Microservices																									
+</span>																									
+</div>																									
+<h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">																									
+API Gateway Service																									
+</h3>																									
+<p class="fs-seven n4-color mt-3">																									
+Designed and implemented an API gateway for microservices architecture with authentication and rate limiting.																									
+</p>																									
+<div class="d-flex gap-3 mt-4 mt-md-6">																									
+<a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-eye"></i>Live Demo																									
+</a>																									
+<a href="https://github.com/your-username/project3" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-github-logo"></i>Code																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="800" class="col-md-6 col-lg-4">																									
+<div class="project-card">																									
+<div class="project-img overflow-hidden">																									
+<img src="assets/images/project4.png" alt="Portfolio Website" class="w-100">																									
+</div>																									
+<div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">																									
+<div>																									
+<div class="d-flex flex-wrap gap-2 align-items-center">																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+HTML/CSS																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+JavaScript																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Responsive																									
+</span>																									
+</div>																									
+<h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">																									
+Portfolio Website																									
+</h3>																									
+<p class="fs-seven n4-color mt-3">																									
+Designed and developed a responsive portfolio website with interactive elements and smooth animations.																									
+</p>																									
+<div class="d-flex gap-3 mt-4 mt-md-6">																									
+<a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-eye"></i>Live Demo																									
+</a>																									
+<a href="https://github.com/your-username/project4" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-github-logo"></i>Code																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="900" class="col-md-6 col-lg-4">																									
+<div class="project-card">																									
+<div class="project-img overflow-hidden">																									
+<img src="assets/images/project5.png" alt="Inventory System" class="w-100">																									
+</div>																									
+<div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">																									
+<div>																									
+<div class="d-flex flex-wrap gap-2 align-items-center">																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Java																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Spring Boot																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+MySQL																									
+</span>																									
+</div>																									
+<h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">																									
+Inventory Management																									
+</h3>																									
+<p class="fs-seven n4-color mt-3">																									
+Built an inventory management system with barcode scanning, stock alerts, and reporting features.																									
+</p>																									
+<div class="d-flex gap-3 mt-4 mt-md-6">																									
+<a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-eye"></i>Live Demo																									
+</a>																									
+<a href="https://github.com/your-username/project5" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-github-logo"></i>Code																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+																									
+<div data-aos="fade-up" data-aos-duration="1000" class="col-md-6 col-lg-4">																									
+<div class="project-card">																									
+<div class="project-img overflow-hidden">																									
+<img src="assets/images/project6.png" alt="Weather App" class="w-100">																									
+</div>																									
+<div class="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">																									
+<div>																									
+<div class="d-flex flex-wrap gap-2 align-items-center">																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+React																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+API Integration																									
+</span>																									
+<span class="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium">																									
+Geolocation																									
+</span>																									
+</div>																									
+<h3 class="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block">																									
+Weather Forecast App																									
+</h3>																									
+<p class="fs-seven n4-color mt-3">																									
+Created a weather application that provides real-time forecasts using geolocation and weather API.																									
+</p>																									
+<div class="d-flex gap-3 mt-4 mt-md-6">																									
+<a href="#" class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-eye"></i>Live Demo																									
+</a>																									
+<a href="https://github.com/your-username/project6" class="primary-btn2 fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2">																									
+<i class="ph ph-github-logo"></i>Code																									
+</a>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</div>																									
+</section>																									
+																									
+<section class="container d-flex flex-wrap gap-3 gap-md-6 justify-content-center justify-content-sm-between align-items-center pb-4 pb-md-8 text-center mb-16 mb-lg-0">																									
+<span class="fs-eight fw-medium n5-color order-sm-1">																									
+Copyright © 2025 <a href="index.html" class="fs-eight fw-medium n5-color">S. Vinotha</a>. All Rights Reserved.																									
+</span>																									
+<span class="fs-eight fw-medium n5-color order-sm-2">																									
+Contact: <a href="tel:+91733946015" class="fs-eight fw-medium n5-color">+91 733946015</a> |																									
+<a href="mailto:vinothaselvam21@gmail.com" class="fs-eight fw-medium n5-color">vinothaselvam21@gmail.com</a>																									
+</span>																									
+</section>																									
+</div>																									
+</div>																									
+																									
+<script src="assets/js/jquary-3.7.0.min.js"></script>																									
+<script src="assets/js/bootstrap.bundle.min.js"></script>																									
+<script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>																									
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>																									
+<script src="assets/js/main.js"></script>																									
+<script>																									
+AOS.init();																									
+</script>																									
+</body>																									
+</html>																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
